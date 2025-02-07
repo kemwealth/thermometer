@@ -7,11 +7,25 @@
     <title>Thermometer</title>
 </head>
 <body>
-    <div class="thermometer">
-        <div class="thermometer-fill" id="thermometerFill"></div>
-        <div class="thermometer-level" id="levelText">0°C</div>
+    <div class="container">
+        <h2>🌡️ 
+            Thermometer Temperature Converter
+        </h2>
+
+        <div class="input-group">
+            <input type="number" id="temperatureInput" placeholder="Enter °C" oninput="updateTemperature()">
+            <span class="unit">°C</span>
+        </div>
+
+        <div class="thermometer-container">
+            <div class="thermometer">
+                <div class="thermometer-fill" id="thermometerFill"></div>
+                <div class="thermometer-level" id="levelText">0°C / 32°F</div>
+            </div>
+        </div>
+
+        <p class="info">Enter a temperature in Celsius, and watch the thermometer fill!</p>
     </div>
-    <button onclick="updateTemperature()">Increase Temperature</button>
     <script src="thermo.js"></script>
 </body>
 </html>
