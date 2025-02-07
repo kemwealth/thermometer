@@ -7,25 +7,33 @@
     <title>Thermometer</title>
 </head>
 <body>
-    <div class="container">
-        <h2>🌡️ 
-            Thermometer Temperature Converter
-        </h2>
+    <header>
+        <h1>🌡️ Thermometer Converter</h1>
+    </header>
 
-        <div class="input-group">
-            <input type="number" id="temperatureInput" placeholder="Enter °C" oninput="updateTemperature()">
-            <span class="unit">°C</span>
-        </div>
+    <main>
+        <div class="container">
+            <h2>Convert Celsius to Fahrenheit</h2>
 
-        <div class="thermometer-container">
-            <div class="thermometer">
-                <div class="thermometer-fill" id="thermometerFill"></div>
-                <div class="thermometer-level" id="levelText">0°C / 32°F</div>
+            <div class="input-group">
+                <input type="number" id="temperatureInput" placeholder="Enter °C" oninput="updateTemperature()">
+                <span class="unit">°C</span>
             </div>
-        </div>
 
-        <p class="info">Enter a temperature in Celsius, and watch the thermometer fill!</p>
-    </div>
+            <div class="thermometer-container">
+                <div class="thermometer">
+                    <div class="thermometer-fill" id="thermometerFill"></div>
+                    <div class="thermometer-level" id="levelText">0°C / 32°F</div>
+                </div>
+            </div>
+
+            <p class="info">Enter a temperature in Celsius, and watch the thermometer update!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Michael Ayoola&copy; Thermometer App | Simply the best!</p>
+    </footer>
     <script src="thermo.js"></script>
 </body>
 </html>

@@ -1,16 +1,38 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    color: #0c056d;
+    font-size: 24px;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
-    margin: 0;
+    width: 100%;
 }
 
-/* Main Container */
+/* Container */
 .container {
     background: rgba(255, 255, 255, 0.2);
     padding: 20px;
@@ -19,10 +41,11 @@ body {
     backdrop-filter: blur(10px);
     text-align: center;
     width: 320px;
+    margin-top: 20px;
 }
 
 h2 {
-    color: #4b3f32;
+    color: #08023b;
     margin-bottom: 15px;
 }
 
@@ -38,12 +61,12 @@ input {
     padding: 12px;
     font-size: 18px;
     width: 150px;
-    border: 2px solid #d1560e;
+    border: 2px solid #0c0606;
     border-radius: 10px;
     outline: none;
     text-align: center;
     background: rgba(255, 255, 255, 0.3);
-    color: #5e5959;
+    color: #746e6e;
     font-weight: bold;
 }
 
@@ -52,7 +75,7 @@ input {
     right: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(22, 20, 20);
+    color: rgb(3, 0, 0);
 }
 
 /* Thermometer Container */
@@ -66,7 +89,7 @@ input {
 .thermometer {
     width: 60px;
     height: 300px;
-    border: 3px solid rgb(5, 4, 4);
+    border: 3px solid rgb(10, 10, 10);
     border-radius: 25px;
     position: relative;
     background: rgba(255, 255, 255, 0.3);
@@ -94,13 +117,30 @@ input {
     transform: translateX(-50%);
     font-size: 18px;
     font-weight: bold;
-    color: rgb(14, 10, 10);
+    color: rgb(12, 11, 11);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Additional Info */
-.note {
-    color: rgb(24, 22, 22);
+.info {
+    color: rgb(12, 11, 11);
     font-size: 14px;
     margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    color: #0c0404;
+    margin: 0;
+    font-size: 14px;
 }
