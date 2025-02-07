@@ -3,7 +3,7 @@
 A simple web-based **Thermometer Temperature Converter** built with **HTML, CSS, and JavaScript**. This project allows users to enter a temperature in **Celsius**, convert it to **Fahrenheit**, and visually display it on a thermometer.
 
 ![Thermometer Preview](Thermometer.png)  
-*(Replace the image URL with a screenshot of your project)*
+
 
 ---
 
@@ -16,4 +16,3 @@ A simple web-based **Thermometer Temperature Converter** built with **HTML, CSS,
 
 ---
 
-## 📂 Project Structure
